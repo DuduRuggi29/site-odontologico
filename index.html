@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sua Logo</title>
+<meta name="description" content="Odontologia completa, moderna e humanizada. Implantes, lentes de contato dental, clareamento, alinhadores invisíveis e muito mais.">
+<meta name="theme-color" content="#08141A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="is-loading">
+
+<!-- Ícones reutilizáveis -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="tooth" viewBox="0 0 24 24"><path d="M12 3.2C10.4 2.2 8.6 1.8 7 2 4.2 2.3 2.6 4.4 2.8 7.4c.2 2.6 1.6 4.2 2.1 6.8.5 2.7.7 6.2 2.1 7.4 1 .8 1.9 0 2.2-1.2.5-2.1 1-4.8 2.8-4.8s2.3 2.7 2.8 4.8c.3 1.2 1.2 2 2.2 1.2 1.4-1.2 1.6-4.7 2.1-7.4.5-2.6 1.9-4.2 2.1-6.8.2-3-1.4-5.1-4.2-5.4-1.6-.2-3.4.2-5 1.2Z"/></symbol>
+    <symbol id="crown" viewBox="0 0 24 24"><path d="M12 4.2C10.4 3.2 8.6 2.8 7 3 4.2 3.3 2.6 5.4 2.8 8.4c.1 1.7.8 3 1.3 4.6h15.8c.5-1.6 1.2-2.9 1.3-4.6.2-3-1.4-5.1-4.2-5.4-1.6-.2-3.4.2-5 1.2Z"/></symbol>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="star" viewBox="0 0 24 24"><path d="m12 2.8 2.8 5.8 6.4.9-4.6 4.5 1.1 6.3L12 17.3l-5.7 3 1.1-6.3-4.6-4.5 6.4-.9Z"/></symbol>
+    <symbol id="wa" viewBox="0 0 24 24"><path d="M12 2.2a9.7 9.7 0 0 0-8.4 14.6L2.3 21.7l5-1.3A9.7 9.7 0 1 0 12 2.2Zm0 17.7a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 19.9Zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8.9c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.7 2.7 0 0 0-.9 2c0 1.2.9 2.4 1 2.5.1.2 1.7 2.7 4.2 3.8 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"/></symbol>
+  </defs>
+</svg>
+
+<!-- PRELOADER -->
+<div class="preloader" aria-hidden="true">
+  <div class="pre-inner">
+    <svg class="pre-tooth" viewBox="0 0 24 24"><use href="#tooth"/></svg>
+    <div class="pre-brand" data-c="nome">Sua Logo</div>
+    <div class="pre-bar"><span></span></div>
+    <div class="pre-meta"><span>Preparando sua experiência</span><span class="pre-pct">0%</span></div>
+  </div>
+</div>
+
+<!-- CURSOR -->
+<div class="cursor" aria-hidden="true"><div class="cursor-ring"><span class="cursor-label"></span></div><div class="cursor-dot"></div></div>
+
+<!-- HEADER -->
+<header class="header">
+  <a href="#inicio" class="logo" data-link>
+    <svg viewBox="0 0 24 24"><use href="#tooth"/></svg>
+    <span data-c="nomeCurto">Sua Logo</span>
+  </a>
+  <nav class="nav" aria-label="Principal">
+    <a href="#sobre" data-link><span class="t">Sobre</span></a>
+    <a href="#tratamentos" data-link><span class="t">Tratamentos</span></a>
+    <a href="#jornada" data-link><span class="t">Jornada</span></a>
+    <a href="#depoimentos" data-link><span class="t">Depoimentos</span></a>
+    <a href="#contato" data-link><span class="t">Contato</span></a>
+  </nav>
+  <a href="#contato" class="btn btn-sm btn-glass magnetic" data-link>Agendar avaliação</a>
+  <button class="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<div class="mobile-menu" aria-hidden="true">
+  <nav>
+    <a href="#sobre" data-link><i>01</i>Sobre</a>
+    <a href="#tratamentos" data-link><i>02</i>Tratamentos</a>
+    <a href="#jornada" data-link><i>03</i>Jornada</a>
+    <a href="#depoimentos" data-link><i>04</i>Depoimentos</a>
+    <a href="#contato" data-link><i>05</i>Contato</a>
+  </nav>
+  <a href="#contato" class="btn btn-primary" data-link>Agendar avaliação</a>
+</div>
+
+<main>
+
+<!-- ============ HERO: VÍDEO CONTROLADO PELO SCROLL ============ -->
+<section class="hero" id="inicio">
+  <div class="hero-stage">
+    <div class="hero-media">
+      <div class="hero-par"><canvas id="heroCanvas"></canvas></div>
+      <div class="hero-shade"></div>
+      <div class="hero-glow"></div>
+    </div>
+
+    <div class="chapter ch1">
+      <p class="eyebrow light"><span class="dot"></span> Odontologia moderna &amp; humanizada</p>
+      <h1 data-split>Seu novo sorriso começa <em>de portas abertas.</em></h1>
+    </div>
+    <div class="chapter ch2">
+      <p class="eyebrow light">Capítulo 02 — Acolhimento</p>
+      <h2 data-split>Cada detalhe pensado para você se sentir <em>em casa.</em></h2>
+    </div>
+    <div class="chapter ch3">
+      <p class="eyebrow light">Capítulo 03 — Tecnologia</p>
+      <h2 data-split>Tecnologia de ponta. <em>Cuidado de gente.</em></h2>
+    </div>
+
+    <div class="hero-final">
+      <p class="eyebrow"><span class="dot"></span> Bem-vindo(a) à nossa clínica</p>
+      <h2 data-split>Odontologia completa para <em>todas as fases</em> do seu sorriso.</h2>
+      <p class="lead">Do primeiro check-up à transformação do sorriso: atendimento sem pressa, diagnóstico preciso e um plano feito só para você.</p>
+      <div class="actions">
+        <a href="#contato" class="btn btn-primary magnetic" data-link>Agendar avaliação <svg><use href="#arrow"/></svg></a>
+        <a href="#tratamentos" class="btn btn-ghost" data-link>Ver tratamentos</a>
+      </div>
+      <div class="trust">
+        <div class="avatars"><span class="av av1"></span><span class="av av2"></span><span class="av av3"></span><span class="av av4">+</span></div>
+        <div><b>+8.000 sorrisos cuidados</b><small><span class="stars-mini">★★★★★</span> nota dos pacientes</small></div>
+      </div>
+    </div>
+
+    <!-- o vídeo se transforma nestas fotos ao final da animação -->
+    <div class="final-photo"><img src="assets/img/consulta.jpg" alt="Dentista conversando com paciente sorridente no consultório" decoding="async"></div>
+    <div class="final-photo-2"><img src="assets/img/sorriso.jpg" alt="Paciente sorrindo ao ver o resultado no espelho" decoding="async"></div>
+
+    <div class="chip chip-a"><svg><use href="#star"/></svg><b>4,9</b> avaliação média</div>
+    <div class="chip chip-b"><span class="pulse"></span> Agenda aberta esta semana</div>
+
+    <div class="scroll-hint">
+      <div class="mouse"><span></span></div>
+      <span>Role para entrar</span>
+    </div>
+
+    <div class="hero-progress" aria-hidden="true">
+      <span class="hp-label">01 · Chegada</span>
+      <div class="hp-track"><span class="hp-fill"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAIXAS CRUZADAS ============ -->
+<section class="bands" aria-hidden="true">
+  <div class="band band-a"><div class="band-track"></div></div>
+  <div class="band band-b"><div class="band-track"></div></div>
+</section>
+
+<!-- ============ MANIFESTO + NÚMEROS ============ -->
+<section class="manifesto" id="sobre">
+  <div class="container">
+    <p class="eyebrow" data-reveal><span class="dot"></span> Sobre nós</p>
+    <p class="manifesto-text" data-scrub-words>Acreditamos que ir ao dentista pode ser leve. Por isso unimos <em>ciência, tecnologia e escuta</em> para cuidar de quem mais importa: você, e da confiança que mora no seu sorriso.</p>
+
+    <div class="stats">
+      <div class="stat" data-reveal><b data-count="15" data-prefix="+">0</b><span>anos de experiência</span></div>
+      <div class="stat" data-reveal><b data-count="8000" data-prefix="+">0</b><span>sorrisos cuidados</span></div>
+      <div class="stat" data-reveal><b data-count="98" data-suffix="%">0</b><span>de pacientes satisfeitos</span></div>
+      <div class="stat" data-reveal><b data-count="12" data-prefix="">0</b><span>especialidades em um só lugar</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRATAMENTOS (grade) ============ -->
+<section class="treat" id="tratamentos">
+  <div class="treat-pin">
+    <div class="treat-head container">
+      <div>
+        <p class="eyebrow light"><span class="dot"></span> Tratamentos</p>
+        <h2 class="h-xl" data-split>Tudo o que seu sorriso precisa, <em>em um só lugar.</em></h2>
+      </div>
+    </div>
+    <div class="treat-track">
+      <article class="tcard" data-cursor="Saiba +">
+        <span class="tnum">01</span>
+        <svg class="ticon" viewBox="0 0 24 24"><use href="#crown"/><path d="M10 13v7.5c0 .8.9 1.5 2 1.5s2-.7 2-1.5V13M9.5 15.5h5M9.5 18h5"/></svg>
+        <h3>Implantes dentários</h3>
+        <p>Recupere a firmeza da mordida e a segurança para sorrir, com planejamento digital e precisão.</p>
+        <span class="tmore">Saiba mais <svg><use href="#arrow"/></svg></span>
+      </article>
+      <article class="tcard" data-cursor="Saiba +">
+        <span class="tnum">02</span>
+        <svg class="ticon" viewBox="0 0 24 24"><use href="#tooth"/><path d="M6.2 5.5c1.6-1.5 3.6-1.2 5.8 0 2.2-1.2 4.2-1.5 5.8 0" opacity=".9"/></svg>
+        <h3>Lentes de contato dental</h3>
+        <p>Lâminas ultrafinas que harmonizam cor, forma e alinhamento com total naturalidade.</p>
+        <span class="tmore">Saiba mais <svg><use href="#arrow"/></svg></span>
+      </article>
+      <article class="tcard" data-cursor="Saiba +">
+        <span class="tnum">03</span>
+        <svg class="ticon" viewBox="0 0 24 24"><use href="#tooth"/><path d="M19.5 1.2v3M18 2.7h3M3.4 17.5v2.4M2.2 18.7h2.4"/></svg>
+        <h3>Clareamento</h3>
+        <p>Dentes visivelmente mais claros com técnicas seguras, no consultório ou em casa.</p>
+        <span class="tmore">Saiba mais <svg><use href="#arrow"/></svg></span>
+      </article>
+      <article class="tcard" data-cursor="Saiba +">
+        <span class="tnum">04</span>
+        <svg class="ticon" viewBox="0 0 24 24"><use href="#tooth"/><path d="M4.6 5.2C6 3.3 9 3 12 4.7c3-1.7 6-1.4 7.4.5" stroke-dasharray="1.6 1.4"/></svg>
+        <h3>Alinhadores invisíveis</h3>
+        <p>Alinhe os dentes de forma discreta e confortável, sem fios nem bráquetes aparentes.</p>
+        <span class="tmore">Saiba mais <svg><use href="#arrow"/></svg></span>
+      </article>
+      <article class="tcard" data-cursor="Saiba +">
+        <span class="tnum">05</span>
+        <svg class="ticon" viewBox="0 0 24 24"><use href="#tooth"/><rect x="9.5" y="6.5" width="5" height="4" rx="1"/><path d="M2.5 8.5h19"/></svg>
+        <h3>Ortodontia</h3>
+        <p>Aparelhos modernos para corrigir mordida e posicionamento em todas as idades.</p>
+        <span class="tmore">Saiba mais <svg><use href="#arrow"/></svg></span>
+      </article>
+      <article class="tcard" data-cursor="Saiba +">
+        <span class="tnum">06</span>
+        <svg class="ticon" viewBox="0 0 24 24"><use href="#tooth"/><path d="M9.3 9.6c.8 1.2 1.6 1.7 2.7 1.7s1.9-.5 2.7-1.7"/><circle cx="9.4" cy="6.6" r=".4"/><circle cx="14.6" cy="6.6" r=".4"/></svg>
+        <h3>Odontopediatria</h3>
+        <p>Um ambiente lúdico e acolhedor para os pequenos crescerem sem medo de dentista.</p>
+        <span class="tmore">Saiba mais <svg><use href="#arrow"/></svg></span>
+      </article>
+      <article class="tcard" data-cursor="Saiba +">
+        <span class="tnum">07</span>
+        <svg class="ticon" viewBox="0 0 24 24"><use href="#tooth"/><path d="M9.6 8.5c-.4 3 .2 6 .1 9.5M14.4 8.5c.4 3-.2 6-.1 9.5"/></svg>
+        <h3>Endodontia</h3>
+        <p>Tratamento de canal com tecnologia que torna o procedimento mais rápido e confortável.</p>
+        <span class="tmore">Saiba mais <svg><use href="#arrow"/></svg></span>
+      </article>
+      <article class="tcard" data-cursor="Saiba +">
+        <span class="tnum">08</span>
+        <svg class="ticon" viewBox="0 0 24 24"><use href="#tooth"/><path d="m8.8 8.6 2.2 2.2 4.2-4.2"/></svg>
+        <h3>Prevenção &amp; limpeza</h3>
+        <p>Check-ups, limpeza profissional e orientação para manter sua saúde bucal sempre em dia.</p>
+        <span class="tmore">Saiba mais <svg><use href="#arrow"/></svg></span>
+      </article>
+      <article class="tcard tcard-cta">
+        <h3>Não sabe por onde começar?</h3>
+        <p>Uma avaliação completa mostra exatamente o que o seu sorriso precisa.</p>
+        <a href="#contato" class="btn btn-primary magnetic" data-link>Agendar avaliação <svg><use href="#arrow"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SIMULADOR DE CLAREAMENTO ============ -->
+<section class="sim">
+  <div class="container sim-grid">
+    <div class="sim-copy">
+      <p class="eyebrow" data-reveal><span class="dot"></span> Experimente</p>
+      <h2 class="h-xl" data-split>Arraste e veja seu sorriso <em>ganhar luz.</em></h2>
+      <p class="lead" data-reveal>Uma simulação ilustrativa de como o clareamento pode transformar o tom dos dentes. O resultado real é definido na avaliação, de forma segura e personalizada.</p>
+      <div class="sim-readout" data-reveal>
+        <div><small>Tom atual</small><b class="sim-shade">A3,5</b></div>
+        <div><small>Luminosidade</small><b class="sim-pct">0%</b></div>
+      </div>
+    </div>
+    <div class="sim-stage" data-reveal data-cursor="Arraste">
+      <svg class="smile" viewBox="0 0 600 340" aria-label="Ilustração de sorriso">
+        <defs>
+          <linearGradient id="tg" x1="0" y1="0" x2="0" y2="1">
+            <stop class="tg1" offset="0" stop-color="#e2c99d"/>
+            <stop class="tg2" offset="1" stop-color="#cdb082"/>
+          </linearGradient>
+          <radialGradient id="mouthBg" cx=".5" cy=".55" r=".6">
+            <stop offset="0" stop-color="#5a1f2b"/><stop offset="1" stop-color="#2a0c13"/>
+          </radialGradient>
+          <linearGradient id="lipU" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d98b86"/><stop offset="1" stop-color="#b8605f"/></linearGradient>
+          <linearGradient id="lipL" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c76f6c"/><stop offset="1" stop-color="#e3a39c"/></linearGradient>
+          <clipPath id="mouthClip"><path d="M78 150 Q300 92 522 150 Q300 318 78 150Z"/></clipPath>
+        </defs>
+        <g clip-path="url(#mouthClip)">
+          <rect width="600" height="340" fill="url(#mouthBg)"/>
+          <g class="teeth-lower"></g>
+          <rect x="0" y="80" width="600" height="46" fill="#e88a95"/>
+          <g class="teeth-upper"></g>
+        </g>
+        <path d="M40 150 Q150 70 255 92 Q300 104 345 92 Q450 70 560 150 Q300 92 40 150Z" fill="url(#lipU)"/>
+        <path d="M40 150 Q300 318 560 150 Q300 362 40 150Z" fill="url(#lipL)"/>
+        <path d="M200 300 Q300 318 400 300" stroke="#fff" stroke-opacity=".35" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <g class="sparkles"></g>
+      </svg>
+      <div class="sim-control">
+        <span>Antes</span>
+        <input type="range" min="0" max="100" value="0" class="sim-range" aria-label="Intensidade do clareamento">
+        <span>Depois</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JORNADA ============ -->
+<section class="journey" id="jornada">
+  <div class="container">
+    <div class="journey-head">
+      <p class="eyebrow" data-reveal><span class="dot"></span> Sua jornada</p>
+      <h2 class="h-xl" data-split>Do primeiro “olá” ao <em>sorriso novo</em>, em 4 passos.</h2>
+    </div>
+    <div class="steps">
+      <div class="steps-line"><span></span></div>
+      <div class="step">
+        <div class="step-dot">01</div>
+        <div class="step-card"><h3>Acolhimento</h3><p>Você é recebido sem pressa. Conversamos sobre seus desejos, receios e histórico.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-dot">02</div>
+        <div class="step-card"><h3>Diagnóstico digital</h3><p>Exames e imagens de alta precisão para entender cada detalhe do seu sorriso.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-dot">03</div>
+        <div class="step-card"><h3>Plano sob medida</h3><p>Um plano claro, com etapas, prazos e opções de pagamento que cabem na sua rotina.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-dot">04</div>
+        <div class="step-card"><h3>Seu novo sorriso</h3><p>Tratamento confortável e acompanhamento contínuo para resultados que duram.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ESTRUTURA ============ -->
+<section class="space">
+  <div class="container space-grid">
+    <div class="space-media" data-cursor="Bem-vindo">
+      <img src="assets/img/espaco.jpg" alt="Paciente aguardando em sala de espera clara e aconchegante" loading="lazy" decoding="async">
+      <div class="space-tag"><svg viewBox="0 0 24 24"><use href="#tooth"/></svg> Estrutura completa</div>
+    </div>
+    <div class="space-copy">
+      <p class="eyebrow" data-reveal><span class="dot"></span> Nosso espaço</p>
+      <h2 class="h-xl" data-split>Um ambiente feito para <em>tranquilizar.</em></h2>
+      <ul class="feats">
+        <li data-reveal><b>Equipamentos de última geração</b><span>Diagnóstico mais preciso e procedimentos mais rápidos.</span></li>
+        <li data-reveal><b>Biossegurança rigorosa</b><span>Protocolos de esterilização em todas as etapas.</span></li>
+        <li data-reveal><b>Conforto do início ao fim</b><span>Ambiente climatizado, acolhedor e silencioso.</span></li>
+        <li data-reveal><b>Facilidade de pagamento</b><span>Condições flexíveis para você cuidar do sorriso sem preocupação.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DEPOIMENTOS ============ -->
+<!-- Depoimentos de EXEMPLO: substitua pelos depoimentos reais da clínica antes de publicar. -->
+<section class="testi" id="depoimentos">
+  <div class="container">
+    <p class="eyebrow" data-reveal><span class="dot"></span> Depoimentos</p>
+    <h2 class="h-xl" data-split>Quem sorri com a gente, <em>recomenda.</em></h2>
+  </div>
+  <div class="marquee" data-dir="1"><div class="marquee-track"></div></div>
+  <div class="marquee" data-dir="-1"><div class="marquee-track"></div></div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq">
+  <div class="container faq-grid">
+    <div>
+      <p class="eyebrow" data-reveal><span class="dot"></span> Dúvidas frequentes</p>
+      <h2 class="h-xl" data-split>Perguntas que <em>sempre</em> chegam até nós.</h2>
+    </div>
+    <div class="faq-list">
+      <div class="qa"><button aria-expanded="false">A primeira avaliação é completa?<i></i></button><div class="ans"><div><p>Sim. Na primeira consulta fazemos uma avaliação detalhada, conversamos sobre seus objetivos e apresentamos um plano de tratamento claro.</p></div></div></div>
+      <div class="qa"><button aria-expanded="false">Vocês atendem crianças?<i></i></button><div class="ans"><div><p>Atendemos todas as idades, com um cuidado especial e lúdico para os pequenos se sentirem seguros.</p></div></div></div>
+      <div class="qa"><button aria-expanded="false">Tenho medo de dentista. E agora?<i></i></button><div class="ans"><div><p>Você não está sozinho. Nosso atendimento é sem pressa, explicamos cada etapa e respeitamos o seu tempo.</p></div></div></div>
+      <div class="qa"><button aria-expanded="false">Quais são as formas de pagamento?<i></i></button><div class="ans"><div><p>Oferecemos condições flexíveis e parcelamento. Os detalhes são apresentados junto com o seu plano de tratamento.</p></div></div></div>
+      <div class="qa"><button aria-expanded="false">Quanto tempo dura o clareamento?<i></i></button><div class="ans"><div><p>Com bons hábitos e acompanhamento, o resultado pode durar bastante tempo. Na avaliação indicamos o melhor protocolo para você.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTATO ============ -->
+<section class="contact" id="contato">
+  <div class="contact-glow"></div>
+  <div class="container contact-grid">
+    <div class="contact-copy">
+      <p class="eyebrow light" data-reveal><span class="dot"></span> Agende sua avaliação</p>
+      <h2 class="h-xxl" data-split>Pronto para sorrir <em>sem medo?</em></h2>
+      <ul class="info">
+        <li data-reveal><small>Endereço</small><span data-c="endereco"></span></li>
+        <li data-reveal><small>Horário</small><span data-c="horario"></span></li>
+        <li data-reveal><small>Telefone</small><span data-c="telefone"></span></li>
+      </ul>
+    </div>
+    <form class="form" data-reveal novalidate>
+      <h3>Fale com a gente pelo WhatsApp</h3>
+      <label class="field"><input name="nome" required placeholder=" " autocomplete="name"><span>Seu nome</span></label>
+      <label class="field"><input name="tel" required placeholder=" " inputmode="tel" autocomplete="tel"><span>Telefone / WhatsApp</span></label>
+      <div class="pills" role="radiogroup" aria-label="Interesse">
+        <label><input type="radio" name="interesse" value="Avaliação geral" checked><span>Avaliação</span></label>
+        <label><input type="radio" name="interesse" value="Implantes"><span>Implantes</span></label>
+        <label><input type="radio" name="interesse" value="Lentes de contato dental"><span>Lentes</span></label>
+        <label><input type="radio" name="interesse" value="Clareamento"><span>Clareamento</span></label>
+        <label><input type="radio" name="interesse" value="Alinhadores invisíveis"><span>Alinhadores</span></label>
+        <label><input type="radio" name="interesse" value="Ortodontia"><span>Ortodontia</span></label>
+      </div>
+      <div class="pills small" role="radiogroup" aria-label="Período">
+        <label><input type="radio" name="periodo" value="manhã" checked><span>Manhã</span></label>
+        <label><input type="radio" name="periodo" value="tarde"><span>Tarde</span></label>
+        <label><input type="radio" name="periodo" value="noite"><span>Noite</span></label>
+      </div>
+      <button class="btn btn-primary btn-block magnetic" type="submit"><svg class="ico-wa"><use href="#wa"/></svg> Agendar pelo WhatsApp</button>
+      <p class="form-note">Resposta rápida em horário comercial.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="foot-top">
+      <div>
+        <a href="#inicio" class="logo" data-link><svg viewBox="0 0 24 24"><use href="#tooth"/></svg><span data-c="nomeCurto">Sua Logo</span></a>
+        <p class="foot-tag">Odontologia completa, moderna e humanizada.</p>
+      </div>
+      <div class="foot-cols">
+        <div><small>Navegue</small><a href="#sobre" data-link>Sobre</a><a href="#tratamentos" data-link>Tratamentos</a><a href="#jornada" data-link>Jornada</a><a href="#contato" data-link>Contato</a></div>
+        <div><small>Contato</small><span data-c="telefone"></span><span data-c="email"></span><span data-c="instagram"></span></div>
+      </div>
+    </div>
+    <div class="foot-word" aria-hidden="true" data-c="nomeCurto">Sua Logo</div>
+    <div class="foot-bottom">
+      <span>Responsável técnico: <span data-c="responsavel"></span></span>
+      <span>© <span class="year"></span> <span data-c="nome"></span></span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="#" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg><use href="#wa"/></svg></a>
+<div class="toast" role="status"></div>
+
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/lenis.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
